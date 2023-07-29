@@ -13,8 +13,8 @@ export default {
       
             target.value = target.value.replace(NUMBER_REGEXP, '');
       
-            this.changeData(listName.textContent, nameItem.textContent, numberColor, colorName, 'number');
-            this.postData(listName.textContent, nameItem.textContent, colorItem.value, colorName, numberColor, nameItem.classList.contains('select'));
+            this.changeData(listName.textContent, nameItem.textContent, target.value, colorName, 'number');
+            this.postData(listName.textContent, nameItem.textContent, colorItem.value, colorName, target.value, nameItem.classList.contains('select'));
         },
         checkValueNumber (evt) {
             const target = evt.target;
