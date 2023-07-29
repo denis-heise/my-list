@@ -8,9 +8,8 @@ export default {
             const nameItem = liBlock.querySelector('label');
             const colorItem = liBlock.querySelector('.color'); 
             const colorName = colorItem.classList[1];
-            const numberColor = liBlock.querySelector('.number-item').value;
-            const NUMBER_REGEXP = /[^0-9]/g;
-      
+            const NUMBER_REGEXP = /\D/g;
+
             target.value = target.value.replace(NUMBER_REGEXP, '');
       
             this.changeData(listName.textContent, nameItem.textContent, target.value, colorName, 'number');
